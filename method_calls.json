@@ -1,0 +1,1622 @@
+[
+  {
+    "Caller": "Microsoft.CodeAnalysis.EmbeddedAttribute..ctor()",
+    "Callees": [
+      "System.Attribute..ctor()"
+    ]
+  },
+  {
+    "Caller": "System.Runtime.CompilerServices.RefSafetyRulesAttribute..ctor(Int32)",
+    "Callees": [
+      "System.Attribute..ctor()"
+    ]
+  },
+  {
+    "Caller": "Mono.Cecil.Pdb.ModuleMetadata..ctor(ModuleDefinition)",
+    "Callees": [
+      "System.Object..ctor()"
+    ]
+  },
+  {
+    "Caller": "Mono.Cecil.Pdb.ModuleMetadata.TryGetType(UInt32, TypeDefinition\u0026)",
+    "Callees": [
+      "Mono.Cecil.Pdb.ModuleMetadata.InitializeMetadata(ModuleDefinition)",
+      "System.Collections.Generic.Dictionary\u00602\u003CSystem.UInt32,Mono.Cecil.TypeDefinition\u003E.TryGetValue(!0, !1\u0026)"
+    ]
+  },
+  {
+    "Caller": "Mono.Cecil.Pdb.ModuleMetadata.TryGetMethod(UInt32, MethodDefinition\u0026)",
+    "Callees": [
+      "Mono.Cecil.Pdb.ModuleMetadata.InitializeMetadata(ModuleDefinition)",
+      "System.Collections.Generic.Dictionary\u00602\u003CSystem.UInt32,Mono.Cecil.MethodDefinition\u003E.TryGetValue(!0, !1\u0026)"
+    ]
+  },
+  {
+    "Caller": "Mono.Cecil.Pdb.ModuleMetadata.InitializeMetadata(ModuleDefinition)",
+    "Callees": [
+      "Mono.Cecil.ModuleDefinition.GetTypes()",
+      "System.Collections.Generic.IEnumerable\u00601\u003CMono.Cecil.TypeDefinition\u003E.GetEnumerator()",
+      "System.Collections.Generic.IEnumerator\u00601\u003CMono.Cecil.TypeDefinition\u003E.get_Current()",
+      "Mono.Cecil.MemberReference.get_MetadataToken()",
+      "Mono.Cecil.MetadataToken.ToUInt32()",
+      "System.Collections.Generic.Dictionary\u00602\u003CSystem.UInt32,Mono.Cecil.TypeDefinition\u003E.Add(!0, !1)",
+      "Mono.Cecil.Pdb.ModuleMetadata.InitializeMethods(TypeDefinition)",
+      "System.Collections.IEnumerator.MoveNext()",
+      "System.IDisposable.Dispose()"
+    ]
+  },
+  {
+    "Caller": "Mono.Cecil.Pdb.ModuleMetadata.InitializeMethods(TypeDefinition)",
+    "Callees": [
+      "Mono.Cecil.TypeDefinition.get_Methods()",
+      "Mono.Collections.Generic.Collection\u00601\u003CMono.Cecil.MethodDefinition\u003E.GetEnumerator()",
+      "Mono.Collections.Generic.Collection\u00601/Enumerator\u003CMono.Cecil.MethodDefinition\u003E.get_Current()",
+      "Mono.Cecil.MemberReference.get_MetadataToken()",
+      "Mono.Cecil.MetadataToken.ToUInt32()",
+      "System.Collections.Generic.Dictionary\u00602\u003CSystem.UInt32,Mono.Cecil.MethodDefinition\u003E.Add(!0, !1)",
+      "Mono.Collections.Generic.Collection\u00601/Enumerator\u003CMono.Cecil.MethodDefinition\u003E.MoveNext()",
+      "System.IDisposable.Dispose()"
+    ]
+  },
+  {
+    "Caller": "Mono.Cecil.Pdb.ModuleMetadata.WriteNameBuffer(String, Char*, UInt32, UInt32*)",
+    "Callees": [
+      "System.String.get_Length()",
+      "System.Math.Min(Int64, Int64)",
+      "System.String.get_Chars(Int32)"
+    ]
+  },
+  {
+    "Caller": "Mono.Cecil.Pdb.NativePdbReader..ctor(Disposable\u00601)",
+    "Callees": [
+      "System.Object..ctor()"
+    ]
+  },
+  {
+    "Caller": "Mono.Cecil.Pdb.NativePdbReader.IsMatchingEntry(PdbInfo, ImageDebugHeaderEntry)",
+    "Callees": [
+      "Mono.Cecil.Cil.ImageDebugHeaderEntry.get_Directory()",
+      "Mono.Cecil.Cil.ImageDebugHeaderEntry.get_Data()",
+      "Mono.Cecil.Pdb.NativePdbReader.ReadInt32(Byte[], Int32)",
+      "System.Buffer.BlockCopy(Array, Int32, Array, Int32, Int32)",
+      "System.Guid.op_Equality(Guid, Guid)"
+    ]
+  },
+  {
+    "Caller": "Mono.Cecil.Pdb.NativePdbReader.ReadScopeAndLocals(PdbScope[], MethodDebugInformation)",
+    "Callees": [
+      "Mono.Cecil.Pdb.NativePdbReader.ReadScopeAndLocals(PdbScope, MethodDebugInformation)",
+      "Mono.Collections.Generic.Collection\u00601\u003CMono.Cecil.Cil.ScopeDebugInformation\u003E.Add(!0)"
+    ]
+  },
+  {
+    "Caller": "Mono.Cecil.Pdb.NativePdbReader.ReadScopeAndLocals(PdbScope, MethodDebugInformation)",
+    "Callees": [
+      "Mono.Cecil.Cil.ScopeDebugInformation.set_Start(InstructionOffset)",
+      "Mono.Cecil.Cil.ScopeDebugInformation.set_End(InstructionOffset)",
+      "Mono.Cecil.Mixin.IsNullOrEmpty(!!0[])",
+      "Mono.Cecil.Cil.VariableDebugInformation.set_IsDebuggerHidden(Boolean)",
+      "Mono.Collections.Generic.Collection\u00601\u003CMono.Cecil.Cil.VariableDebugInformation\u003E.Add(!0)",
+      "Mono.Cecil.Mixin.IsNullOrEmpty(!!0[])",
+      "Mono.Cecil.Cil.MethodDebugInformation.get_Method()",
+      "Mono.Cecil.MemberReference.get_Module()",
+      "Mono.Cecil.ModuleDefinition.Read(!!0, Func\u00603)",
+      "Mono.Cecil.TypeReference.get_IsValueType()",
+      "Mono.Collections.Generic.Collection\u00601\u003CMono.Cecil.Cil.ConstantDebugInformation\u003E.Add(!0)",
+      "Mono.Cecil.Mixin.IsNullOrEmpty(!!0[])",
+      "System.Collections.Generic.Dictionary\u00602\u003CMicrosoft.Cci.Pdb.PdbScope,Mono.Cecil.Cil.ImportDebugInformation\u003E.TryGetValue(!0, !1\u0026)",
+      "Mono.Cecil.Cil.MethodDebugInformation.get_Method()",
+      "Mono.Cecil.MemberReference.get_Module()",
+      "Mono.Cecil.Pdb.NativePdbReader.GetImport(PdbScope, ModuleDefinition)",
+      "System.Collections.Generic.Dictionary\u00602\u003CMicrosoft.Cci.Pdb.PdbScope,Mono.Cecil.Cil.ImportDebugInformation\u003E.Add(!0, !1)",
+      "Mono.Cecil.Pdb.NativePdbReader.ReadScopeAndLocals(PdbScope[], MethodDebugInformation)"
+    ]
+  },
+  {
+    "Caller": "Mono.Cecil.Pdb.NativePdbReader.AddScope(Collection\u00601, ScopeDebugInformation)",
+    "Callees": [
+      "Mono.Collections.Generic.Collection\u00601\u003CMono.Cecil.Cil.ScopeDebugInformation\u003E.GetEnumerator()",
+      "Mono.Collections.Generic.Collection\u00601/Enumerator\u003CMono.Cecil.Cil.ScopeDebugInformation\u003E.get_Current()",
+      "Mono.Cecil.Cil.ScopeDebugInformation.get_HasScopes()",
+      "Mono.Cecil.Cil.ScopeDebugInformation.get_Scopes()",
+      "Mono.Cecil.Pdb.NativePdbReader.AddScope(Collection\u00601, ScopeDebugInformation)",
+      "Mono.Cecil.Cil.ScopeDebugInformation.get_Start()",
+      "Mono.Cecil.Cil.InstructionOffset.get_Offset()",
+      "Mono.Cecil.Cil.ScopeDebugInformation.get_Start()",
+      "Mono.Cecil.Cil.InstructionOffset.get_Offset()",
+      "Mono.Cecil.Cil.ScopeDebugInformation.get_End()",
+      "Mono.Cecil.Cil.InstructionOffset.get_Offset()",
+      "Mono.Cecil.Cil.ScopeDebugInformation.get_End()",
+      "Mono.Cecil.Cil.InstructionOffset.get_Offset()",
+      "Mono.Cecil.Cil.ScopeDebugInformation.get_Scopes()",
+      "Mono.Collections.Generic.Collection\u00601\u003CMono.Cecil.Cil.ScopeDebugInformation\u003E.Add(!0)",
+      "Mono.Collections.Generic.Collection\u00601/Enumerator\u003CMono.Cecil.Cil.ScopeDebugInformation\u003E.MoveNext()",
+      "System.IDisposable.Dispose()"
+    ]
+  },
+  {
+    "Caller": "Mono.Cecil.Pdb.NativePdbReader.GetImport(UInt32, ModuleDefinition)",
+    "Callees": [
+      "System.Collections.Generic.Dictionary\u00602\u003CSystem.UInt32,Microsoft.Cci.Pdb.PdbFunction\u003E.TryGetValue(!0, !1\u0026)",
+      "System.Collections.Generic.Dictionary\u00602\u003CMicrosoft.Cci.Pdb.PdbScope,Mono.Cecil.Cil.ImportDebugInformation\u003E.TryGetValue(!0, !1\u0026)",
+      "Mono.Cecil.Pdb.NativePdbReader.GetImport(PdbScope, ModuleDefinition)",
+      "System.Collections.Generic.Dictionary\u00602\u003CMicrosoft.Cci.Pdb.PdbScope,Mono.Cecil.Cil.ImportDebugInformation\u003E.Add(!0, !1)"
+    ]
+  },
+  {
+    "Caller": "Mono.Cecil.Pdb.NativePdbReader.GetImport(PdbScope, ModuleDefinition)",
+    "Callees": [
+      "Mono.Cecil.Mixin.IsNullOrEmpty(!!0[])",
+      "System.String.IsNullOrEmpty(String)",
+      "System.String.Substring(Int32)",
+      "System.String.get_Chars(Int32)",
+      "Mono.Cecil.TypeParser.ParseType(ModuleDefinition, String, Boolean)",
+      "System.String.IndexOf(Char)",
+      "System.String.Substring(Int32, Int32)",
+      "System.String.Substring(Int32)",
+      "System.String.get_Chars(Int32)",
+      "Mono.Cecil.TypeParser.ParseType(ModuleDefinition, String, Boolean)",
+      "System.String.StartsWith(String)",
+      "System.String.Substring(Int32)",
+      "Mono.Cecil.Cil.ImportDebugInformation.get_Targets()",
+      "Mono.Collections.Generic.Collection\u00601\u003CMono.Cecil.Cil.ImportTarget\u003E.Add(!0)"
+    ]
+  },
+  {
+    "Caller": "Mono.Cecil.Pdb.NativePdbReader.ReadSequencePoints(PdbFunction, MethodDebugInformation)",
+    "Callees": [
+      "Mono.Cecil.Pdb.NativePdbReader.ReadLines(PdbLines, MethodDebugInformation)"
+    ]
+  },
+  {
+    "Caller": "Mono.Cecil.Pdb.NativePdbReader.ReadLines(PdbLines, MethodDebugInformation)",
+    "Callees": [
+      "Mono.Cecil.Pdb.NativePdbReader.GetDocument(PdbSource)",
+      "Mono.Cecil.Pdb.NativePdbReader.ReadLine(PdbLine, Document, MethodDebugInformation)"
+    ]
+  },
+  {
+    "Caller": "Mono.Cecil.Pdb.NativePdbReader.ReadLine(PdbLine, Document, MethodDebugInformation)",
+    "Callees": [
+      "Mono.Cecil.Cil.SequencePoint.set_StartLine(Int32)",
+      "Mono.Cecil.Cil.SequencePoint.set_StartColumn(Int32)",
+      "Mono.Cecil.Cil.SequencePoint.set_EndLine(Int32)",
+      "Mono.Cecil.Cil.SequencePoint.set_EndColumn(Int32)",
+      "Mono.Collections.Generic.Collection\u00601\u003CMono.Cecil.Cil.SequencePoint\u003E.Add(!0)"
+    ]
+  },
+  {
+    "Caller": "Mono.Cecil.Pdb.NativePdbReader.GetDocument(PdbSource)",
+    "Callees": [
+      "System.Collections.Generic.Dictionary\u00602\u003CSystem.String,Mono.Cecil.Cil.Document\u003E.TryGetValue(!0, !1\u0026)",
+      "Mono.Cecil.Cil.Document.set_LanguageGuid(Guid)",
+      "Mono.Cecil.Cil.Document.set_LanguageVendorGuid(Guid)",
+      "Mono.Cecil.Cil.Document.set_TypeGuid(Guid)",
+      "Mono.Cecil.Cil.Document.set_HashAlgorithmGuid(Guid)",
+      "Mono.Cecil.Cil.Document.set_Hash(Byte[])",
+      "System.Collections.Generic.Dictionary\u00602\u003CSystem.String,Mono.Cecil.Cil.Document\u003E.Add(!0, !1)"
+    ]
+  },
+  {
+    "Caller": "Mono.Cecil.Pdb.NativePdbReader/\u003C\u003Ec..ctor()",
+    "Callees": [
+      "System.Object..ctor()"
+    ]
+  },
+  {
+    "Caller": "Mono.Cecil.Pdb.NativePdbReader/\u003C\u003Ec.\u003CReadScopeAndLocals\u003Eb__11_0(PdbConstant, MetadataReader)",
+    "Callees": [
+      "Mono.Cecil.MetadataReader.ReadConstantSignature(MetadataToken)"
+    ]
+  },
+  {
+    "Caller": "Mono.Cecil.Pdb.NativePdbWriter..ctor(ModuleDefinition, SymWriter)",
+    "Callees": [
+      "System.Object..ctor()"
+    ]
+  },
+  {
+    "Caller": "Mono.Cecil.Pdb.NativePdbWriter.DefineCustomMetadata(MethodDebugInformation, MetadataToken)",
+    "Callees": [
+      "Mono.Cecil.MetadataToken.get_RID()",
+      "Mono.Cecil.Pdb.CustomMetadataWriter.WriteForwardInfo(MetadataToken)",
+      "Mono.Cecil.Cil.ScopeDebugInformation.get_Import()",
+      "Mono.Cecil.Cil.ScopeDebugInformation.get_Import()",
+      "Mono.Cecil.Cil.ImportDebugInformation.get_HasTargets()",
+      "Mono.Cecil.Cil.ScopeDebugInformation.get_Import()",
+      "Mono.Cecil.Pdb.CustomMetadataWriter.WriteUsingInfo(ImportDebugInformation)",
+      "Mono.Cecil.Cil.MethodDebugInformation.get_Method()",
+      "Mono.Cecil.MethodDefinition.get_HasCustomAttributes()",
+      "Mono.Cecil.Cil.MethodDebugInformation.get_Method()",
+      "Mono.Cecil.MethodDefinition.get_CustomAttributes()",
+      "Mono.Collections.Generic.Collection\u00601\u003CMono.Cecil.CustomAttribute\u003E.GetEnumerator()",
+      "Mono.Collections.Generic.Collection\u00601/Enumerator\u003CMono.Cecil.CustomAttribute\u003E.get_Current()",
+      "Mono.Cecil.CustomAttribute.get_AttributeType()",
+      "Mono.Cecil.Mixin.IsTypeOf(TypeReference, String, String)",
+      "Mono.Cecil.Mixin.IsTypeOf(TypeReference, String, String)",
+      "Mono.Cecil.CustomAttribute.get_ConstructorArguments()",
+      "Mono.Collections.Generic.Collection\u00601\u003CMono.Cecil.CustomAttributeArgument\u003E.get_Item(Int32)",
+      "Mono.Cecil.CustomAttributeArgument.get_Value()",
+      "Mono.Cecil.Pdb.CustomMetadataWriter.WriteForwardIterator(TypeReference)",
+      "Mono.Collections.Generic.Collection\u00601/Enumerator\u003CMono.Cecil.CustomAttribute\u003E.MoveNext()",
+      "System.IDisposable.Dispose()",
+      "Mono.Cecil.Cil.DebugInformation.get_HasCustomDebugInformations()",
+      "Mono.Cecil.Cil.DebugInformation.get_CustomDebugInformations()",
+      "System.Linq.Enumerable.FirstOrDefault(IEnumerable\u00601, Func\u00602)",
+      "Mono.Cecil.Pdb.CustomMetadataWriter.WriteIteratorScopes(StateMachineScopeDebugInformation, MethodDebugInformation)",
+      "Mono.Cecil.Pdb.CustomMetadataWriter.WriteCustomMetadata()",
+      "Mono.Cecil.Pdb.NativePdbWriter.DefineAsyncCustomMetadata(MethodDebugInformation)"
+    ]
+  },
+  {
+    "Caller": "Mono.Cecil.Pdb.NativePdbWriter.DefineAsyncCustomMetadata(MethodDebugInformation)",
+    "Callees": [
+      "Mono.Cecil.Cil.DebugInformation.get_HasCustomDebugInformations()",
+      "Mono.Cecil.Cil.DebugInformation.get_CustomDebugInformations()",
+      "Mono.Collections.Generic.Collection\u00601\u003CMono.Cecil.Cil.CustomDebugInformation\u003E.GetEnumerator()",
+      "Mono.Collections.Generic.Collection\u00601/Enumerator\u003CMono.Cecil.Cil.CustomDebugInformation\u003E.get_Current()",
+      "Mono.Cecil.Cil.MethodDebugInformation.get_StateMachineKickOffMethod()",
+      "Mono.Cecil.Cil.MethodDebugInformation.get_StateMachineKickOffMethod()",
+      "Mono.Cecil.MemberReference.get_MetadataToken()",
+      "Mono.Cecil.MetadataToken.ToUInt32()",
+      "Mono.Cecil.PE.BinaryStreamWriter.WriteUInt32(UInt32)",
+      "Mono.Cecil.Cil.AsyncMethodBodyDebugInformation.get_CatchHandler()",
+      "Mono.Cecil.Cil.InstructionOffset.get_Offset()",
+      "Mono.Cecil.PE.BinaryStreamWriter.WriteUInt32(UInt32)",
+      "Mono.Cecil.Cil.AsyncMethodBodyDebugInformation.get_Resumes()",
+      "Mono.Collections.Generic.Collection\u00601\u003CMono.Cecil.Cil.InstructionOffset\u003E.get_Count()",
+      "Mono.Cecil.PE.BinaryStreamWriter.WriteUInt32(UInt32)",
+      "Mono.Cecil.Cil.AsyncMethodBodyDebugInformation.get_Yields()",
+      "Mono.Collections.Generic.Collection\u00601\u003CMono.Cecil.Cil.InstructionOffset\u003E.get_Item(Int32)",
+      "Mono.Cecil.Cil.InstructionOffset.get_Offset()",
+      "Mono.Cecil.PE.BinaryStreamWriter.WriteUInt32(UInt32)",
+      "Mono.Collections.Generic.Collection\u00601\u003CMono.Cecil.MethodDefinition\u003E.get_Item(Int32)",
+      "Mono.Cecil.MemberReference.get_MetadataToken()",
+      "Mono.Cecil.MetadataToken.ToUInt32()",
+      "Mono.Cecil.PE.BinaryStreamWriter.WriteUInt32(UInt32)",
+      "Mono.Cecil.Cil.AsyncMethodBodyDebugInformation.get_Resumes()",
+      "Mono.Collections.Generic.Collection\u00601\u003CMono.Cecil.Cil.InstructionOffset\u003E.get_Item(Int32)",
+      "Mono.Cecil.Cil.InstructionOffset.get_Offset()",
+      "Mono.Cecil.PE.BinaryStreamWriter.WriteUInt32(UInt32)",
+      "Mono.Cecil.Cil.AsyncMethodBodyDebugInformation.get_Resumes()",
+      "Mono.Collections.Generic.Collection\u00601\u003CMono.Cecil.Cil.InstructionOffset\u003E.get_Count()",
+      "System.IO.MemoryStream.ToArray()",
+      "Mono.Cecil.Pdb.SymWriter.DefineCustomMetadata(String, Byte[])",
+      "System.IDisposable.Dispose()",
+      "Mono.Collections.Generic.Collection\u00601/Enumerator\u003CMono.Cecil.Cil.CustomDebugInformation\u003E.MoveNext()",
+      "System.IDisposable.Dispose()"
+    ]
+  },
+  {
+    "Caller": "Mono.Cecil.Pdb.NativePdbWriter.DefineScope(ScopeDebugInformation, MethodDebugInformation, MetadataToken\u0026)",
+    "Callees": [
+      "Mono.Cecil.Cil.ScopeDebugInformation.get_Start()",
+      "Mono.Cecil.Cil.InstructionOffset.get_Offset()",
+      "Mono.Cecil.Cil.ScopeDebugInformation.get_End()",
+      "Mono.Cecil.Cil.InstructionOffset.get_IsEndOfMethod()",
+      "Mono.Cecil.Cil.ScopeDebugInformation.get_End()",
+      "Mono.Cecil.Cil.InstructionOffset.get_Offset()",
+      "Mono.Cecil.Pdb.SymWriter.OpenScope(Int32)",
+      "Mono.Cecil.Cil.ScopeDebugInformation.get_Import()",
+      "Mono.Cecil.Cil.ScopeDebugInformation.get_Import()",
+      "Mono.Cecil.Cil.ImportDebugInformation.get_HasTargets()",
+      "Mono.Cecil.Cil.ScopeDebugInformation.get_Import()",
+      "System.Collections.Generic.Dictionary\u00602\u003CMono.Cecil.Cil.ImportDebugInformation,Mono.Cecil.MetadataToken\u003E.TryGetValue(!0, !1\u0026)",
+      "Mono.Cecil.Cil.ScopeDebugInformation.get_Import()",
+      "Mono.Cecil.Cil.ImportDebugInformation.get_Targets()",
+      "Mono.Collections.Generic.Collection\u00601\u003CMono.Cecil.Cil.ImportTarget\u003E.GetEnumerator()",
+      "Mono.Collections.Generic.Collection\u00601/Enumerator\u003CMono.Cecil.Cil.ImportTarget\u003E.get_Current()",
+      "Mono.Cecil.Cil.ImportTarget.get_Kind()",
+      "System.String.Concat(String, String)",
+      "Mono.Cecil.Pdb.SymWriter.UsingNamespace(String)",
+      "Mono.Cecil.TypeParser.ToParseable(TypeReference, Boolean)",
+      "System.String.Concat(String, String)",
+      "Mono.Cecil.Pdb.SymWriter.UsingNamespace(String)",
+      "Mono.Cecil.Cil.ImportTarget.get_Alias()",
+      "System.String.Concat(String, String, String, String)",
+      "Mono.Cecil.Pdb.SymWriter.UsingNamespace(String)",
+      "Mono.Cecil.Cil.ImportTarget.get_Alias()",
+      "Mono.Cecil.TypeParser.ToParseable(TypeReference, Boolean)",
+      "System.String.Concat(String, String, String, String)",
+      "Mono.Cecil.Pdb.SymWriter.UsingNamespace(String)",
+      "Mono.Collections.Generic.Collection\u00601/Enumerator\u003CMono.Cecil.Cil.ImportTarget\u003E.MoveNext()",
+      "System.IDisposable.Dispose()",
+      "Mono.Cecil.Cil.ScopeDebugInformation.get_Import()",
+      "Mono.Cecil.MemberReference.get_MetadataToken()",
+      "System.Collections.Generic.Dictionary\u00602\u003CMono.Cecil.Cil.ImportDebugInformation,Mono.Cecil.MetadataToken\u003E.Add(!0, !1)",
+      "Mono.Cecil.MetadataToken.ToInt32()",
+      "Mono.Cecil.Mixin.IsNullOrEmpty(Collection\u00601)",
+      "Mono.Collections.Generic.Collection\u00601\u003CMono.Cecil.Cil.VariableDebugInformation\u003E.get_Item(Int32)",
+      "Mono.Cecil.Pdb.NativePdbWriter.DefineLocalVariable(VariableDebugInformation, Int32, Int32, Int32)",
+      "Mono.Collections.Generic.Collection\u00601\u003CMono.Cecil.Cil.VariableDebugInformation\u003E.get_Count()",
+      "Mono.Cecil.Mixin.IsNullOrEmpty(Collection\u00601)",
+      "Mono.Collections.Generic.Collection\u00601\u003CMono.Cecil.Cil.ConstantDebugInformation\u003E.get_Item(Int32)",
+      "Mono.Cecil.Pdb.NativePdbWriter.DefineConstant(ConstantDebugInformation)",
+      "Mono.Collections.Generic.Collection\u00601\u003CMono.Cecil.Cil.ConstantDebugInformation\u003E.get_Count()",
+      "Mono.Cecil.Mixin.IsNullOrEmpty(Collection\u00601)",
+      "Mono.Collections.Generic.Collection\u00601\u003CMono.Cecil.Cil.ScopeDebugInformation\u003E.get_Item(Int32)",
+      "Mono.Cecil.Pdb.NativePdbWriter.DefineScope(ScopeDebugInformation, MethodDebugInformation, MetadataToken\u0026)",
+      "Mono.Collections.Generic.Collection\u00601\u003CMono.Cecil.Cil.ScopeDebugInformation\u003E.get_Count()",
+      "Mono.Cecil.Pdb.SymWriter.CloseScope(Int32)"
+    ]
+  },
+  {
+    "Caller": "Mono.Cecil.Pdb.NativePdbWriter.DefineSequencePoints(Collection\u00601)",
+    "Callees": [
+      "Mono.Collections.Generic.Collection\u00601\u003CMono.Cecil.Cil.SequencePoint\u003E.get_Item(Int32)",
+      "Mono.Cecil.Cil.SequencePoint.get_Document()",
+      "Mono.Cecil.Pdb.NativePdbWriter.GetDocument(Document)",
+      "Mono.Cecil.Cil.SequencePoint.get_Offset()",
+      "Mono.Cecil.Cil.SequencePoint.get_StartLine()",
+      "Mono.Cecil.Cil.SequencePoint.get_StartColumn()",
+      "Mono.Cecil.Cil.SequencePoint.get_EndLine()",
+      "Mono.Cecil.Cil.SequencePoint.get_EndColumn()",
+      "Mono.Cecil.Pdb.SymWriter.DefineSequencePoints(SymDocumentWriter, Int32[], Int32[], Int32[], Int32[], Int32[])",
+      "Mono.Collections.Generic.Collection\u00601\u003CMono.Cecil.Cil.SequencePoint\u003E.get_Count()"
+    ]
+  },
+  {
+    "Caller": "Mono.Cecil.Pdb.NativePdbWriter.DefineLocalVariable(VariableDebugInformation, Int32, Int32, Int32)",
+    "Callees": [
+      "Mono.Cecil.Cil.VariableDebugInformation.get_Name()",
+      "Mono.Cecil.Cil.VariableDebugInformation.get_Attributes()",
+      "Mono.Cecil.Cil.VariableDebugInformation.get_Index()",
+      "Mono.Cecil.Pdb.SymWriter.DefineLocalVariable2(String, VariableAttributes, Int32, Int32, Int32, Int32, Int32, Int32)"
+    ]
+  },
+  {
+    "Caller": "Mono.Cecil.Pdb.NativePdbWriter.DefineConstant(ConstantDebugInformation)",
+    "Callees": [
+      "Mono.Cecil.Cil.ConstantDebugInformation.get_ConstantType()",
+      "Mono.Cecil.MetadataBuilder.GetConstantTypeBlobIndex(TypeReference)",
+      "Mono.Cecil.MetadataBuilder.AddStandAloneSignature(UInt32)",
+      "Mono.Cecil.MetadataToken..ctor(TokenType, UInt32)",
+      "Mono.Cecil.Cil.ConstantDebugInformation.get_Name()",
+      "Mono.Cecil.Cil.ConstantDebugInformation.get_Value()",
+      "Mono.Cecil.MetadataToken.ToInt32()",
+      "Mono.Cecil.Pdb.SymWriter.DefineConstant2(String, Object, Int32)"
+    ]
+  },
+  {
+    "Caller": "Mono.Cecil.Pdb.NativePdbWriter.GetDocument(Document)",
+    "Callees": [
+      "Mono.Cecil.Cil.Document.get_Url()",
+      "System.Collections.Generic.Dictionary\u00602\u003CSystem.String,Mono.Cecil.Pdb.SymDocumentWriter\u003E.TryGetValue(!0, !1\u0026)",
+      "Mono.Cecil.Cil.Document.get_Url()",
+      "Mono.Cecil.Cil.Document.get_LanguageGuid()",
+      "Mono.Cecil.Cil.Document.get_LanguageVendorGuid()",
+      "Mono.Cecil.Cil.Document.get_TypeGuid()",
+      "Mono.Cecil.Pdb.SymWriter.DefineDocument(String, Guid, Guid, Guid)",
+      "Mono.Cecil.Cil.Document.get_Hash()",
+      "Mono.Cecil.Mixin.IsNullOrEmpty(!!0[])",
+      "Mono.Cecil.Cil.Document.get_HashAlgorithmGuid()",
+      "Mono.Cecil.Cil.Document.get_Hash()",
+      "Mono.Cecil.Pdb.SymDocumentWriter.SetCheckSum(Guid, Byte[])",
+      "Mono.Cecil.Cil.Document.get_Url()",
+      "System.Collections.Generic.Dictionary\u00602\u003CSystem.String,Mono.Cecil.Pdb.SymDocumentWriter\u003E.set_Item(!0, !1)"
+    ]
+  },
+  {
+    "Caller": "Mono.Cecil.Pdb.NativePdbWriter/\u003C\u003Ec..ctor()",
+    "Callees": [
+      "System.Object..ctor()"
+    ]
+  },
+  {
+    "Caller": "Mono.Cecil.Pdb.NativePdbWriter/\u003C\u003Ec.\u003CDefineCustomMetadata\u003Eb__11_0(CustomDebugInformation)",
+    "Callees": [
+      "Mono.Cecil.Cil.CustomDebugInformation.get_Kind()"
+    ]
+  },
+  {
+    "Caller": "Mono.Cecil.Pdb.CustomMetadataWriter..ctor(SymWriter)",
+    "Callees": [
+      "System.Object..ctor()",
+      "Mono.Cecil.PE.BinaryStreamWriter.WriteByte(Byte)",
+      "Mono.Cecil.PE.BinaryStreamWriter.WriteByte(Byte)",
+      "Mono.Cecil.PE.BinaryStreamWriter.Align(Int32)"
+    ]
+  },
+  {
+    "Caller": "Mono.Cecil.Pdb.CustomMetadataWriter.WriteUsingInfo(ImportDebugInformation)",
+    "Callees": [
+      "Mono.Cecil.Pdb.CustomMetadataWriter.Write(CustomMetadataType, Action)"
+    ]
+  },
+  {
+    "Caller": "Mono.Cecil.Pdb.CustomMetadataWriter.WriteForwardInfo(MetadataToken)",
+    "Callees": [
+      "Mono.Cecil.Pdb.CustomMetadataWriter.Write(CustomMetadataType, Action)"
+    ]
+  },
+  {
+    "Caller": "Mono.Cecil.Pdb.CustomMetadataWriter.WriteIteratorScopes(StateMachineScopeDebugInformation, MethodDebugInformation)",
+    "Callees": [
+      "Mono.Cecil.Pdb.CustomMetadataWriter.Write(CustomMetadataType, Action)"
+    ]
+  },
+  {
+    "Caller": "Mono.Cecil.Pdb.CustomMetadataWriter.WriteForwardIterator(TypeReference)",
+    "Callees": [
+      "Mono.Cecil.Pdb.CustomMetadataWriter.Write(CustomMetadataType, Action)"
+    ]
+  },
+  {
+    "Caller": "Mono.Cecil.Pdb.CustomMetadataWriter.Write(CustomMetadataType, Action)",
+    "Callees": [
+      "Mono.Cecil.PE.BinaryStreamWriter.WriteByte(Byte)",
+      "Mono.Cecil.PE.BinaryStreamWriter.WriteByte(Byte)",
+      "Mono.Cecil.PE.BinaryStreamWriter.Align(Int32)",
+      "Mono.Cecil.PE.BinaryStreamWriter.get_Position()",
+      "Mono.Cecil.PE.BinaryStreamWriter.WriteUInt32(UInt32)",
+      "System.Action.Invoke()",
+      "Mono.Cecil.PE.BinaryStreamWriter.Align(Int32)",
+      "Mono.Cecil.PE.BinaryStreamWriter.get_Position()",
+      "Mono.Cecil.PE.BinaryStreamWriter.set_Position(Int32)",
+      "Mono.Cecil.PE.BinaryStreamWriter.WriteInt32(Int32)",
+      "Mono.Cecil.PE.BinaryStreamWriter.set_Position(Int32)"
+    ]
+  },
+  {
+    "Caller": "Mono.Cecil.Pdb.CustomMetadataWriter.WriteCustomMetadata()",
+    "Callees": [
+      "System.IO.BinaryWriter.get_BaseStream()",
+      "System.IO.Stream.set_Position(Int64)",
+      "Mono.Cecil.PE.BinaryStreamWriter.WriteByte(Byte)",
+      "System.IO.BinaryWriter.Flush()",
+      "System.IO.MemoryStream.ToArray()",
+      "Mono.Cecil.Pdb.SymWriter.DefineCustomMetadata(String, Byte[])"
+    ]
+  },
+  {
+    "Caller": "Mono.Cecil.Pdb.CustomMetadataWriter/\u003C\u003Ec__DisplayClass6_0..ctor()",
+    "Callees": [
+      "System.Object..ctor()"
+    ]
+  },
+  {
+    "Caller": "Mono.Cecil.Pdb.CustomMetadataWriter/\u003C\u003Ec__DisplayClass6_0.\u003CWriteUsingInfo\u003Eb__0()",
+    "Callees": [
+      "Mono.Cecil.PE.BinaryStreamWriter.WriteUInt16(UInt16)",
+      "Mono.Cecil.Cil.ImportDebugInformation.get_Targets()",
+      "Mono.Collections.Generic.Collection\u00601\u003CMono.Cecil.Cil.ImportTarget\u003E.get_Count()",
+      "Mono.Cecil.PE.BinaryStreamWriter.WriteUInt16(UInt16)"
+    ]
+  },
+  {
+    "Caller": "Mono.Cecil.Pdb.CustomMetadataWriter/\u003C\u003Ec__DisplayClass7_0..ctor()",
+    "Callees": [
+      "System.Object..ctor()"
+    ]
+  },
+  {
+    "Caller": "Mono.Cecil.Pdb.CustomMetadataWriter/\u003C\u003Ec__DisplayClass7_0.\u003CWriteForwardInfo\u003Eb__0()",
+    "Callees": [
+      "Mono.Cecil.MetadataToken.ToUInt32()",
+      "Mono.Cecil.PE.BinaryStreamWriter.WriteUInt32(UInt32)"
+    ]
+  },
+  {
+    "Caller": "Mono.Cecil.Pdb.CustomMetadataWriter/\u003C\u003Ec__DisplayClass8_0..ctor()",
+    "Callees": [
+      "System.Object..ctor()"
+    ]
+  },
+  {
+    "Caller": "Mono.Cecil.Pdb.CustomMetadataWriter/\u003C\u003Ec__DisplayClass8_0.\u003CWriteIteratorScopes\u003Eb__0()",
+    "Callees": [
+      "Mono.Cecil.Cil.StateMachineScopeDebugInformation.get_Scopes()",
+      "Mono.Collections.Generic.Collection\u00601\u003CMono.Cecil.Cil.StateMachineScope\u003E.get_Count()",
+      "Mono.Cecil.PE.BinaryStreamWriter.WriteInt32(Int32)",
+      "Mono.Collections.Generic.Collection\u00601\u003CMono.Cecil.Cil.StateMachineScope\u003E.GetEnumerator()",
+      "Mono.Collections.Generic.Collection\u00601/Enumerator\u003CMono.Cecil.Cil.StateMachineScope\u003E.get_Current()",
+      "Mono.Cecil.Cil.StateMachineScope.get_Start()",
+      "Mono.Cecil.Cil.InstructionOffset.get_Offset()",
+      "Mono.Cecil.Cil.StateMachineScope.get_End()",
+      "Mono.Cecil.Cil.InstructionOffset.get_IsEndOfMethod()",
+      "Mono.Cecil.Cil.StateMachineScope.get_End()",
+      "Mono.Cecil.Cil.InstructionOffset.get_Offset()",
+      "Mono.Cecil.PE.BinaryStreamWriter.WriteInt32(Int32)",
+      "Mono.Cecil.PE.BinaryStreamWriter.WriteInt32(Int32)",
+      "Mono.Collections.Generic.Collection\u00601/Enumerator\u003CMono.Cecil.Cil.StateMachineScope\u003E.MoveNext()",
+      "System.IDisposable.Dispose()"
+    ]
+  },
+  {
+    "Caller": "Mono.Cecil.Pdb.CustomMetadataWriter/\u003C\u003Ec__DisplayClass9_0..ctor()",
+    "Callees": [
+      "System.Object..ctor()"
+    ]
+  },
+  {
+    "Caller": "Mono.Cecil.Pdb.CustomMetadataWriter/\u003C\u003Ec__DisplayClass9_0.\u003CWriteForwardIterator\u003Eb__0()",
+    "Callees": [
+      "System.Text.Encoding.get_Unicode()",
+      "Mono.Cecil.MemberReference.get_Name()",
+      "System.Text.Encoding.GetBytes(String)",
+      "Mono.Cecil.PE.BinaryStreamWriter.WriteBytes(Byte[])"
+    ]
+  },
+  {
+    "Caller": "Mono.Cecil.Pdb.NativePdbReaderProvider..ctor()",
+    "Callees": [
+      "System.Object..ctor()"
+    ]
+  },
+  {
+    "Caller": "Mono.Cecil.Pdb.PdbReaderProvider..ctor()",
+    "Callees": [
+      "System.Object..ctor()"
+    ]
+  },
+  {
+    "Caller": "Mono.Cecil.Pdb.NativePdbWriterProvider.CreateWriter(ModuleDefinition, String)",
+    "Callees": [
+      "System.IO.File.Exists(String)",
+      "System.IO.File.Delete(String)",
+      "Mono.Cecil.Pdb.SymWriter.Initialize(Object, String, Boolean)"
+    ]
+  },
+  {
+    "Caller": "Mono.Cecil.Pdb.NativePdbWriterProvider..ctor()",
+    "Callees": [
+      "System.Object..ctor()"
+    ]
+  },
+  {
+    "Caller": "Mono.Cecil.Pdb.PdbWriterProvider..ctor()",
+    "Callees": [
+      "System.Object..ctor()"
+    ]
+  },
+  {
+    "Caller": "Mono.Cecil.Pdb.SymDocumentWriter..ctor(ISymUnmanagedDocumentWriter)",
+    "Callees": [
+      "System.Object..ctor()"
+    ]
+  },
+  {
+    "Caller": "Mono.Cecil.Pdb.SymDocumentWriter.SetSource(Byte[])",
+    "Callees": [
+      "Mono.Cecil.Pdb.ISymUnmanagedDocumentWriter.SetSource(UInt32, Byte[])"
+    ]
+  },
+  {
+    "Caller": "Mono.Cecil.Pdb.SymDocumentWriter.SetCheckSum(Guid, Byte[])",
+    "Callees": [
+      "Mono.Cecil.Pdb.ISymUnmanagedDocumentWriter.SetCheckSum(Guid, UInt32, Byte[])"
+    ]
+  },
+  {
+    "Caller": "Mono.Cecil.Pdb.SymWriter..ctor()",
+    "Callees": [
+      "System.Object..ctor()",
+      "Mono.Cecil.Pdb.SymWriter.CoCreateInstance(Guid\u0026, Object, UInt32, Guid\u0026, Object\u0026)"
+    ]
+  },
+  {
+    "Caller": "Mono.Cecil.Pdb.SymWriter.GetDebugInfo(ImageDebugDirectory\u0026)",
+    "Callees": [
+      "Mono.Cecil.Pdb.ISymUnmanagedWriter2.GetDebugInfo(ImageDebugDirectory\u0026, Int32, Int32\u0026, Byte[])",
+      "Mono.Cecil.Pdb.ISymUnmanagedWriter2.GetDebugInfo(ImageDebugDirectory\u0026, Int32, Int32\u0026, Byte[])"
+    ]
+  },
+  {
+    "Caller": "Mono.Cecil.Pdb.SymWriter.DefineLocalVariable2(String, VariableAttributes, Int32, Int32, Int32, Int32, Int32, Int32)",
+    "Callees": [
+      "Mono.Cecil.Pdb.ISymUnmanagedWriter2.DefineLocalVariable2(String, Int32, Int32, Int32, Int32, Int32, Int32, Int32, Int32)"
+    ]
+  },
+  {
+    "Caller": "Mono.Cecil.Pdb.SymWriter.DefineConstant2(String, Object, Int32)",
+    "Callees": [
+      "Mono.Cecil.Pdb.ISymUnmanagedWriter2.DefineConstant2(String, Object, Int32)",
+      "Mono.Cecil.Pdb.ISymUnmanagedWriter2.DefineConstant2(String, Object, Int32)"
+    ]
+  },
+  {
+    "Caller": "Mono.Cecil.Pdb.SymWriter.Close()",
+    "Callees": [
+      "Mono.Cecil.Pdb.ISymUnmanagedWriter2.Close()",
+      "System.Runtime.InteropServices.Marshal.ReleaseComObject(Object)",
+      "Mono.Collections.Generic.Collection\u00601\u003CMono.Cecil.Pdb.ISymUnmanagedDocumentWriter\u003E.GetEnumerator()",
+      "Mono.Collections.Generic.Collection\u00601/Enumerator\u003CMono.Cecil.Pdb.ISymUnmanagedDocumentWriter\u003E.get_Current()",
+      "System.Runtime.InteropServices.Marshal.ReleaseComObject(Object)",
+      "Mono.Collections.Generic.Collection\u00601/Enumerator\u003CMono.Cecil.Pdb.ISymUnmanagedDocumentWriter\u003E.MoveNext()",
+      "System.IDisposable.Dispose()"
+    ]
+  },
+  {
+    "Caller": "Mono.Cecil.Pdb.SymWriter.CloseMethod()",
+    "Callees": [
+      "Mono.Cecil.Pdb.ISymUnmanagedWriter2.CloseMethod()"
+    ]
+  },
+  {
+    "Caller": "Mono.Cecil.Pdb.SymWriter.CloseNamespace()",
+    "Callees": [
+      "Mono.Cecil.Pdb.ISymUnmanagedWriter2.CloseNamespace()"
+    ]
+  },
+  {
+    "Caller": "Mono.Cecil.Pdb.SymWriter.CloseScope(Int32)",
+    "Callees": [
+      "Mono.Cecil.Pdb.ISymUnmanagedWriter2.CloseScope(Int32)"
+    ]
+  },
+  {
+    "Caller": "Mono.Cecil.Pdb.SymWriter.DefineDocument(String, Guid, Guid, Guid)",
+    "Callees": [
+      "Mono.Cecil.Pdb.ISymUnmanagedWriter2.DefineDocument(String, Guid\u0026, Guid\u0026, Guid\u0026, ISymUnmanagedDocumentWriter\u0026)",
+      "Mono.Collections.Generic.Collection\u00601\u003CMono.Cecil.Pdb.ISymUnmanagedDocumentWriter\u003E.Add(!0)"
+    ]
+  },
+  {
+    "Caller": "Mono.Cecil.Pdb.SymWriter.DefineSequencePoints(SymDocumentWriter, Int32[], Int32[], Int32[], Int32[], Int32[])",
+    "Callees": [
+      "Mono.Cecil.Pdb.SymDocumentWriter.get_Writer()",
+      "Mono.Cecil.Pdb.ISymUnmanagedWriter2.DefineSequencePoints(ISymUnmanagedDocumentWriter, Int32, Int32[], Int32[], Int32[], Int32[], Int32[])"
+    ]
+  },
+  {
+    "Caller": "Mono.Cecil.Pdb.SymWriter.Initialize(Object, String, Boolean)",
+    "Callees": [
+      "Mono.Cecil.Pdb.ISymUnmanagedWriter2.Initialize(Object, String, IStream, Boolean)"
+    ]
+  },
+  {
+    "Caller": "Mono.Cecil.Pdb.SymWriter.SetUserEntryPoint(Int32)",
+    "Callees": [
+      "Mono.Cecil.Pdb.ISymUnmanagedWriter2.SetUserEntryPoint(Int32)"
+    ]
+  },
+  {
+    "Caller": "Mono.Cecil.Pdb.SymWriter.OpenMethod(Int32)",
+    "Callees": [
+      "Mono.Cecil.Pdb.ISymUnmanagedWriter2.OpenMethod(Int32)"
+    ]
+  },
+  {
+    "Caller": "Mono.Cecil.Pdb.SymWriter.OpenNamespace(String)",
+    "Callees": [
+      "Mono.Cecil.Pdb.ISymUnmanagedWriter2.OpenNamespace(String)"
+    ]
+  },
+  {
+    "Caller": "Mono.Cecil.Pdb.SymWriter.OpenScope(Int32)",
+    "Callees": [
+      "Mono.Cecil.Pdb.ISymUnmanagedWriter2.OpenScope(Int32, Int32\u0026)"
+    ]
+  },
+  {
+    "Caller": "Mono.Cecil.Pdb.SymWriter.UsingNamespace(String)",
+    "Callees": [
+      "Mono.Cecil.Pdb.ISymUnmanagedWriter2.UsingNamespace(String)"
+    ]
+  },
+  {
+    "Caller": "Mono.Cecil.Pdb.SymWriter.DefineCustomMetadata(String, Byte[])",
+    "Callees": [
+      "System.Runtime.InteropServices.GCHandle.Alloc(Object, GCHandleType)",
+      "System.Runtime.InteropServices.GCHandle.AddrOfPinnedObject()",
+      "Mono.Cecil.Pdb.ISymUnmanagedWriter2.SetSymAttribute(UInt32, String, UInt32, IntPtr)",
+      "System.Runtime.InteropServices.GCHandle.Free()"
+    ]
+  },
+  {
+    "Caller": "Microsoft.Cci.Pdb.BitAccess..ctor(Int32)",
+    "Callees": [
+      "System.Object..ctor()"
+    ]
+  },
+  {
+    "Caller": "Microsoft.Cci.Pdb.BitAccess..ctor(Byte[])",
+    "Callees": [
+      "System.Object..ctor()"
+    ]
+  },
+  {
+    "Caller": "Microsoft.Cci.Pdb.BitAccess.FillBuffer(Stream, Int32)",
+    "Callees": [
+      "Microsoft.Cci.Pdb.BitAccess.MinCapacity(Int32)",
+      "System.IO.Stream.Read(Byte[], Int32, Int32)"
+    ]
+  },
+  {
+    "Caller": "Microsoft.Cci.Pdb.BitAccess.Append(Stream, Int32)",
+    "Callees": [
+      "System.Array.Copy(Array, Array, Int32)",
+      "System.IO.Stream.Read(Byte[], Int32, Int32)"
+    ]
+  },
+  {
+    "Caller": "Microsoft.Cci.Pdb.BitAccess.ReadInt32(Int32[])",
+    "Callees": [
+      "Microsoft.Cci.Pdb.BitAccess.ReadInt32(Int32\u0026)"
+    ]
+  },
+  {
+    "Caller": "Microsoft.Cci.Pdb.BitAccess.ReadUInt32(UInt32[])",
+    "Callees": [
+      "Microsoft.Cci.Pdb.BitAccess.ReadUInt32(UInt32\u0026)"
+    ]
+  },
+  {
+    "Caller": "Microsoft.Cci.Pdb.BitAccess.ReadFloat()",
+    "Callees": [
+      "System.BitConverter.ToSingle(Byte[], Int32)"
+    ]
+  },
+  {
+    "Caller": "Microsoft.Cci.Pdb.BitAccess.ReadDouble()",
+    "Callees": [
+      "System.BitConverter.ToDouble(Byte[], Int32)"
+    ]
+  },
+  {
+    "Caller": "Microsoft.Cci.Pdb.BitAccess.ReadDecimal()",
+    "Callees": [
+      "Microsoft.Cci.Pdb.BitAccess.ReadInt32(Int32[])"
+    ]
+  },
+  {
+    "Caller": "Microsoft.Cci.Pdb.BitAccess.ReadBString(String\u0026)",
+    "Callees": [
+      "Microsoft.Cci.Pdb.BitAccess.ReadUInt16(UInt16\u0026)",
+      "System.Text.Encoding.get_UTF8()",
+      "System.Text.Encoding.GetString(Byte[], Int32, Int32)"
+    ]
+  },
+  {
+    "Caller": "Microsoft.Cci.Pdb.BitAccess.ReadBString(Int32)",
+    "Callees": [
+      "System.Text.Encoding.get_UTF8()",
+      "System.Text.Encoding.GetString(Byte[], Int32, Int32)"
+    ]
+  },
+  {
+    "Caller": "Microsoft.Cci.Pdb.BitAccess.ReadCString(String\u0026)",
+    "Callees": [
+      "System.Text.Encoding.get_UTF8()",
+      "System.Text.Encoding.GetString(Byte[], Int32, Int32)"
+    ]
+  },
+  {
+    "Caller": "Microsoft.Cci.Pdb.BitAccess.ReadGuid(Guid\u0026)",
+    "Callees": [
+      "Microsoft.Cci.Pdb.BitAccess.ReadUInt32(UInt32\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadUInt16(UInt16\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadUInt16(UInt16\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadUInt8(Byte\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadUInt8(Byte\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadUInt8(Byte\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadUInt8(Byte\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadUInt8(Byte\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadUInt8(Byte\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadUInt8(Byte\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadUInt8(Byte\u0026)"
+    ]
+  },
+  {
+    "Caller": "Microsoft.Cci.Pdb.BitAccess.ReadString()",
+    "Callees": [
+      "System.Text.Encoding.get_Unicode()",
+      "System.Text.Encoding.GetString(Byte[], Int32, Int32)"
+    ]
+  },
+  {
+    "Caller": "Microsoft.Cci.Pdb.BitSet..ctor(BitAccess)",
+    "Callees": [
+      "Microsoft.Cci.Pdb.BitAccess.ReadInt32(Int32\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadUInt32(UInt32[])"
+    ]
+  },
+  {
+    "Caller": "Microsoft.Cci.Pdb.BitSet.IsSet(Int32)",
+    "Callees": [
+      "Microsoft.Cci.Pdb.BitSet.GetBit(Int32)"
+    ]
+  },
+  {
+    "Caller": "Microsoft.Cci.Pdb.DataStream..ctor()",
+    "Callees": [
+      "System.Object..ctor()"
+    ]
+  },
+  {
+    "Caller": "Microsoft.Cci.Pdb.DataStream..ctor(Int32, BitAccess, Int32)",
+    "Callees": [
+      "System.Object..ctor()",
+      "Microsoft.Cci.Pdb.BitAccess.ReadInt32(Int32[])"
+    ]
+  },
+  {
+    "Caller": "Microsoft.Cci.Pdb.DataStream.Read(PdbReader, BitAccess)",
+    "Callees": [
+      "Microsoft.Cci.Pdb.BitAccess.MinCapacity(Int32)",
+      "Microsoft.Cci.Pdb.BitAccess.get_Buffer()",
+      "Microsoft.Cci.Pdb.DataStream.Read(PdbReader, Int32, Byte[], Int32, Int32)"
+    ]
+  },
+  {
+    "Caller": "Microsoft.Cci.Pdb.DataStream.Read(PdbReader, Int32, Byte[], Int32, Int32)",
+    "Callees": [
+      "Microsoft.Cci.Pdb.PdbReader.Seek(Int32, Int32)",
+      "Microsoft.Cci.Pdb.PdbReader.Read(Byte[], Int32, Int32)",
+      "Microsoft.Cci.Pdb.PdbReader.Seek(Int32, Int32)",
+      "Microsoft.Cci.Pdb.PdbReader.Read(Byte[], Int32, Int32)"
+    ]
+  },
+  {
+    "Caller": "Microsoft.Cci.Pdb.DbiDbgHdr..ctor(BitAccess)",
+    "Callees": [
+      "Microsoft.Cci.Pdb.BitAccess.ReadUInt16(UInt16\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadUInt16(UInt16\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadUInt16(UInt16\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadUInt16(UInt16\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadUInt16(UInt16\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadUInt16(UInt16\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadUInt16(UInt16\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadUInt16(UInt16\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadUInt16(UInt16\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadUInt16(UInt16\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadUInt16(UInt16\u0026)"
+    ]
+  },
+  {
+    "Caller": "Microsoft.Cci.Pdb.DbiHeader..ctor(BitAccess)",
+    "Callees": [
+      "Microsoft.Cci.Pdb.BitAccess.ReadInt32(Int32\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadInt32(Int32\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadInt32(Int32\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadInt16(Int16\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadUInt16(UInt16\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadInt16(Int16\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadUInt16(UInt16\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadInt16(Int16\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadUInt16(UInt16\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadInt32(Int32\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadInt32(Int32\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadInt32(Int32\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadInt32(Int32\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadInt32(Int32\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadInt32(Int32\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadInt32(Int32\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadInt32(Int32\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadUInt16(UInt16\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadUInt16(UInt16\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadInt32(Int32\u0026)"
+    ]
+  },
+  {
+    "Caller": "Microsoft.Cci.Pdb.DbiModuleInfo..ctor(BitAccess, Boolean)",
+    "Callees": [
+      "System.Object..ctor()",
+      "Microsoft.Cci.Pdb.BitAccess.ReadInt32(Int32\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadUInt16(UInt16\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadInt16(Int16\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadInt32(Int32\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadInt32(Int32\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadInt32(Int32\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadInt16(Int16\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadInt16(Int16\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadUInt32(UInt32\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadInt32(Int32\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadInt32(Int32\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadCString(String\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadCString(String\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.SkipCString(String\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.SkipCString(String\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.Align(Int32)"
+    ]
+  },
+  {
+    "Caller": "Microsoft.Cci.Pdb.DbiSecCon..ctor(BitAccess)",
+    "Callees": [
+      "Microsoft.Cci.Pdb.BitAccess.ReadInt16(Int16\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadInt16(Int16\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadInt32(Int32\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadInt32(Int32\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadUInt32(UInt32\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadInt16(Int16\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadInt16(Int16\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadUInt32(UInt32\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadUInt32(UInt32\u0026)"
+    ]
+  },
+  {
+    "Caller": "Microsoft.Cci.Pdb.IntHashTable..ctor()",
+    "Callees": [
+      "Microsoft.Cci.Pdb.IntHashTable..ctor(Int32, Int32)"
+    ]
+  },
+  {
+    "Caller": "Microsoft.Cci.Pdb.IntHashTable..ctor(Int32, Int32)",
+    "Callees": [
+      "System.Object..ctor()",
+      "System.String.Format(String, Object, Object)",
+      "Microsoft.Cci.Pdb.IntHashTable.GetPrime(Int32)"
+    ]
+  },
+  {
+    "Caller": "Microsoft.Cci.Pdb.IntHashTable.Add(Int32, Object)",
+    "Callees": [
+      "Microsoft.Cci.Pdb.IntHashTable.Insert(Int32, Object, Boolean)"
+    ]
+  },
+  {
+    "Caller": "Microsoft.Cci.Pdb.IntHashTable.get_Item(Int32)",
+    "Callees": [
+      "Microsoft.Cci.Pdb.IntHashTable.InitHash(Int32, Int32, UInt32\u0026, UInt32\u0026)"
+    ]
+  },
+  {
+    "Caller": "Microsoft.Cci.Pdb.IntHashTable.expand()",
+    "Callees": [
+      "Microsoft.Cci.Pdb.IntHashTable.GetPrime(Int32)",
+      "Microsoft.Cci.Pdb.IntHashTable.rehash(Int32)"
+    ]
+  },
+  {
+    "Caller": "Microsoft.Cci.Pdb.IntHashTable.rehash()",
+    "Callees": [
+      "Microsoft.Cci.Pdb.IntHashTable.rehash(Int32)"
+    ]
+  },
+  {
+    "Caller": "Microsoft.Cci.Pdb.IntHashTable.rehash(Int32)",
+    "Callees": [
+      "Microsoft.Cci.Pdb.IntHashTable.putEntry(bucket[], Int32, Object, Int32)"
+    ]
+  },
+  {
+    "Caller": "Microsoft.Cci.Pdb.IntHashTable.Insert(Int32, Object, Boolean)",
+    "Callees": [
+      "Microsoft.Cci.Pdb.IntHashTable.expand()",
+      "Microsoft.Cci.Pdb.IntHashTable.rehash()",
+      "Microsoft.Cci.Pdb.IntHashTable.InitHash(Int32, Int32, UInt32\u0026, UInt32\u0026)",
+      "System.Int32.ToString()",
+      "System.String.Concat(String, String)"
+    ]
+  },
+  {
+    "Caller": "Microsoft.Cci.Pdb.IntHashTable..cctor()",
+    "Callees": [
+      "System.Runtime.CompilerServices.RuntimeHelpers.InitializeArray(Array, RuntimeFieldHandle)"
+    ]
+  },
+  {
+    "Caller": "Microsoft.Cci.Pdb.MsfDirectory..ctor(PdbReader, PdbFileHeader, BitAccess)",
+    "Callees": [
+      "System.Object..ctor()",
+      "Microsoft.Cci.Pdb.PdbReader.PagesFromSize(Int32)",
+      "Microsoft.Cci.Pdb.BitAccess.MinCapacity(Int32)",
+      "Microsoft.Cci.Pdb.PdbReader.Seek(Int32, Int32)",
+      "Microsoft.Cci.Pdb.BitAccess.Append(Stream, Int32)",
+      "Microsoft.Cci.Pdb.BitAccess.set_Position(Int32)",
+      "Microsoft.Cci.Pdb.BitAccess.MinCapacity(Int32)",
+      "Microsoft.Cci.Pdb.DataStream.Read(PdbReader, BitAccess)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadInt32(Int32\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadInt32(Int32[])",
+      "Microsoft.Cci.Pdb.PdbReader.PagesFromSize(Int32)"
+    ]
+  },
+  {
+    "Caller": "Microsoft.Cci.Pdb.PdbConstant..ctor(String, UInt32, Object)",
+    "Callees": [
+      "System.Object..ctor()"
+    ]
+  },
+  {
+    "Caller": "Microsoft.Cci.Pdb.PdbConstant..ctor(BitAccess)",
+    "Callees": [
+      "System.Object..ctor()",
+      "Microsoft.Cci.Pdb.BitAccess.ReadUInt32(UInt32\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadUInt8(Byte\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadUInt8(Byte\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadInt8(SByte\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadInt16(Int16\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadUInt16(UInt16\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadInt32(Int32\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadUInt32(UInt32\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadFloat()",
+      "Microsoft.Cci.Pdb.BitAccess.ReadDouble()",
+      "Microsoft.Cci.Pdb.BitAccess.ReadInt64(Int64\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadUInt64(UInt64\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadBString(String\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadDecimal()",
+      "Microsoft.Cci.Pdb.BitAccess.ReadCString(String\u0026)"
+    ]
+  },
+  {
+    "Caller": "Microsoft.Cci.Pdb.PdbDebugException..ctor(String, Object[])",
+    "Callees": [
+      "System.String.Format(String, Object[])",
+      "System.IO.IOException..ctor(String)"
+    ]
+  },
+  {
+    "Caller": "Microsoft.Cci.Pdb.PdbException..ctor(String, Object[])",
+    "Callees": [
+      "System.String.Format(String, Object[])",
+      "System.IO.IOException..ctor(String)"
+    ]
+  },
+  {
+    "Caller": "Microsoft.Cci.Pdb.PdbFile..ctor()",
+    "Callees": [
+      "System.Object..ctor()"
+    ]
+  },
+  {
+    "Caller": "Microsoft.Cci.Pdb.PdbFile.LoadInjectedSourceInformation(BitAccess, Guid\u0026, Guid\u0026, Guid\u0026, Guid\u0026, Byte[]\u0026)",
+    "Callees": [
+      "Microsoft.Cci.Pdb.BitAccess.ReadGuid(Guid\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadGuid(Guid\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadGuid(Guid\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadGuid(Guid\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadInt32(Int32\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadInt32(Int32\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadBytes(Byte[])"
+    ]
+  },
+  {
+    "Caller": "Microsoft.Cci.Pdb.PdbFile.LoadNameIndex(BitAccess, Int32\u0026, Guid\u0026)",
+    "Callees": [
+      "Microsoft.Cci.Pdb.BitAccess.ReadInt32(Int32\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadInt32(Int32\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadInt32(Int32\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadGuid(Guid\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadInt32(Int32\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.get_Position()",
+      "Microsoft.Cci.Pdb.BitAccess.get_Position()",
+      "Microsoft.Cci.Pdb.BitAccess.set_Position(Int32)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadInt32(Int32\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadInt32(Int32\u0026)",
+      "Microsoft.Cci.Pdb.BitSet..ctor(BitAccess)",
+      "Microsoft.Cci.Pdb.BitSet.IsSet(Int32)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadInt32(Int32\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadInt32(Int32\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.get_Position()",
+      "Microsoft.Cci.Pdb.BitAccess.set_Position(Int32)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadCString(String\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.set_Position(Int32)",
+      "System.String.ToUpperInvariant()",
+      "System.Collections.Generic.Dictionary\u00602\u003CSystem.String,System.Int32\u003E.Add(!0, !1)"
+    ]
+  },
+  {
+    "Caller": "Microsoft.Cci.Pdb.PdbFile.LoadNameStream(BitAccess)",
+    "Callees": [
+      "Microsoft.Cci.Pdb.BitAccess.ReadUInt32(UInt32\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadInt32(Int32\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadInt32(Int32\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.get_Position()",
+      "Microsoft.Cci.Pdb.BitAccess.get_Position()",
+      "Microsoft.Cci.Pdb.BitAccess.set_Position(Int32)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadInt32(Int32\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.get_Position()",
+      "Microsoft.Cci.Pdb.BitAccess.ReadInt32(Int32\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.get_Position()",
+      "Microsoft.Cci.Pdb.BitAccess.set_Position(Int32)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadCString(String\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.set_Position(Int32)",
+      "Microsoft.Cci.Pdb.IntHashTable.Add(Int32, Object)",
+      "Microsoft.Cci.Pdb.BitAccess.set_Position(Int32)"
+    ]
+  },
+  {
+    "Caller": "Microsoft.Cci.Pdb.PdbFile.FindFunction(PdbFunction[], UInt16, UInt32)",
+    "Callees": [
+      "System.Array.BinarySearch(Array, Object, IComparer)"
+    ]
+  },
+  {
+    "Caller": "Microsoft.Cci.Pdb.PdbFile.LoadManagedLines(PdbFunction[], IntHashTable, BitAccess, MsfDirectory, Dictionary\u00602, PdbReader, UInt32, Dictionary\u00602)",
+    "Callees": [
+      "System.Array.Sort(Array, IComparer)",
+      "Microsoft.Cci.Pdb.BitAccess.get_Position()",
+      "Microsoft.Cci.Pdb.PdbFile.ReadSourceFileInfo(BitAccess, UInt32, IntHashTable, MsfDirectory, Dictionary\u00602, PdbReader, Dictionary\u00602)",
+      "Microsoft.Cci.Pdb.BitAccess.set_Position(Int32)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadInt32(Int32\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadInt32(Int32\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.get_Position()",
+      "Microsoft.Cci.Pdb.BitAccess.ReadUInt32(UInt32\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadUInt16(UInt16\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadUInt16(UInt16\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadUInt32(UInt32\u0026)",
+      "Microsoft.Cci.Pdb.PdbFile.FindFunction(PdbFunction[], UInt16, UInt32)",
+      "Microsoft.Cci.Pdb.BitAccess.get_Position()",
+      "Microsoft.Cci.Pdb.BitAccess.ReadUInt32(UInt32\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadUInt32(UInt32\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadUInt32(UInt32\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.get_Position()",
+      "Microsoft.Cci.Pdb.BitAccess.set_Position(Int32)",
+      "Microsoft.Cci.Pdb.BitAccess.get_Position()",
+      "Microsoft.Cci.Pdb.BitAccess.set_Position(Int32)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadUInt32(UInt32\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadUInt32(UInt32\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadUInt32(UInt32\u0026)",
+      "Microsoft.Cci.Pdb.IntHashTable.get_Item(Int32)",
+      "System.Guid.Equals(Guid)",
+      "Microsoft.Cci.Pdb.PdbFunction.AdjustVisualBasicScopes()",
+      "Microsoft.Cci.Pdb.BitAccess.get_Position()",
+      "Microsoft.Cci.Pdb.BitAccess.get_Position()",
+      "Microsoft.Cci.Pdb.BitAccess.set_Position(Int32)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadUInt32(UInt32\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadUInt32(UInt32\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.set_Position(Int32)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadUInt16(UInt16\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadUInt16(UInt16\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.get_Position()",
+      "Microsoft.Cci.Pdb.BitAccess.set_Position(Int32)",
+      "Microsoft.Cci.Pdb.BitAccess.get_Position()"
+    ]
+  },
+  {
+    "Caller": "Microsoft.Cci.Pdb.PdbFile.LoadFuncsFromDbiModule(BitAccess, DbiModuleInfo, IntHashTable, List\u00601, Boolean, MsfDirectory, Dictionary\u00602, PdbReader, Dictionary\u00602)",
+    "Callees": [
+      "Microsoft.Cci.Pdb.BitAccess.set_Position(Int32)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadInt32(Int32\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.set_Position(Int32)",
+      "Microsoft.Cci.Pdb.PdbFunction.LoadManagedFunctions(BitAccess, UInt32, Boolean)",
+      "Microsoft.Cci.Pdb.BitAccess.set_Position(Int32)",
+      "Microsoft.Cci.Pdb.PdbFile.LoadManagedLines(PdbFunction[], IntHashTable, BitAccess, MsfDirectory, Dictionary\u00602, PdbReader, UInt32, Dictionary\u00602)",
+      "System.Collections.Generic.List\u00601\u003CMicrosoft.Cci.Pdb.PdbFunction\u003E.Add(!0)"
+    ]
+  },
+  {
+    "Caller": "Microsoft.Cci.Pdb.PdbFile.LoadDbiStream(BitAccess, DbiModuleInfo[]\u0026, DbiDbgHdr\u0026, Boolean)",
+    "Callees": [
+      "Microsoft.Cci.Pdb.DbiHeader..ctor(BitAccess)",
+      "Microsoft.Cci.Pdb.BitAccess.get_Position()",
+      "System.Collections.Generic.List\u00601\u003CMicrosoft.Cci.Pdb.DbiModuleInfo\u003E.Add(!0)",
+      "Microsoft.Cci.Pdb.BitAccess.get_Position()",
+      "Microsoft.Cci.Pdb.BitAccess.get_Position()",
+      "Microsoft.Cci.Pdb.BitAccess.get_Position()",
+      "System.Collections.Generic.List\u00601\u003CMicrosoft.Cci.Pdb.DbiModuleInfo\u003E.get_Count()",
+      "System.Collections.Generic.List\u00601\u003CMicrosoft.Cci.Pdb.DbiModuleInfo\u003E.ToArray()",
+      "Microsoft.Cci.Pdb.BitAccess.get_Position()",
+      "Microsoft.Cci.Pdb.BitAccess.set_Position(Int32)",
+      "Microsoft.Cci.Pdb.BitAccess.get_Position()",
+      "Microsoft.Cci.Pdb.BitAccess.set_Position(Int32)",
+      "Microsoft.Cci.Pdb.BitAccess.get_Position()",
+      "Microsoft.Cci.Pdb.BitAccess.set_Position(Int32)",
+      "Microsoft.Cci.Pdb.BitAccess.get_Position()",
+      "Microsoft.Cci.Pdb.BitAccess.set_Position(Int32)",
+      "Microsoft.Cci.Pdb.BitAccess.get_Position()",
+      "Microsoft.Cci.Pdb.BitAccess.set_Position(Int32)",
+      "Microsoft.Cci.Pdb.BitAccess.get_Position()",
+      "Microsoft.Cci.Pdb.BitAccess.set_Position(Int32)"
+    ]
+  },
+  {
+    "Caller": "Microsoft.Cci.Pdb.PdbFile.LoadFunctions(Stream)",
+    "Callees": [
+      "Microsoft.Cci.Pdb.DataStream.Read(PdbReader, BitAccess)",
+      "Microsoft.Cci.Pdb.PdbFile.LoadNameIndex(BitAccess, Int32\u0026, Guid\u0026)",
+      "System.Collections.Generic.Dictionary\u00602\u003CSystem.String,System.Int32\u003E.TryGetValue(!0, !1\u0026)",
+      "System.Array.Empty()",
+      "Microsoft.Cci.Pdb.DataStream.Read(PdbReader, BitAccess)",
+      "Microsoft.Cci.Pdb.PdbFile.LoadNameStream(BitAccess)",
+      "System.Collections.Generic.Dictionary\u00602\u003CSystem.String,System.Int32\u003E.TryGetValue(!0, !1\u0026)",
+      "Microsoft.Cci.Pdb.DataStream.Read(PdbReader, BitAccess)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadBString(Int32)",
+      "System.Collections.Generic.Dictionary\u00602\u003CSystem.String,System.Int32\u003E.TryGetValue(!0, !1\u0026)",
+      "Microsoft.Cci.Pdb.DataStream.Read(PdbReader, BitAccess)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadBytes(Byte[])",
+      "Microsoft.Cci.Pdb.DataStream.Read(PdbReader, BitAccess)",
+      "Microsoft.Cci.Pdb.PdbFile.LoadDbiStream(BitAccess, DbiModuleInfo[]\u0026, DbiDbgHdr\u0026, Boolean)",
+      "Microsoft.Cci.Pdb.DataStream.Read(PdbReader, BitAccess)",
+      "System.String.op_Equality(String, String)",
+      "Microsoft.Cci.Pdb.PdbFile.LoadTokenToSourceInfo(BitAccess, DbiModuleInfo, IntHashTable, MsfDirectory, Dictionary\u00602, PdbReader, Dictionary\u00602, Dictionary\u00602)",
+      "Microsoft.Cci.Pdb.PdbFile.LoadFuncsFromDbiModule(BitAccess, DbiModuleInfo, IntHashTable, List\u00601, Boolean, MsfDirectory, Dictionary\u00602, PdbReader, Dictionary\u00602)",
+      "System.Collections.Generic.List\u00601\u003CMicrosoft.Cci.Pdb.PdbFunction\u003E.ToArray()",
+      "Microsoft.Cci.Pdb.DataStream.Read(PdbReader, BitAccess)",
+      "Microsoft.Cci.Pdb.DataStream.get_Length()",
+      "Microsoft.Cci.Pdb.BitAccess.ReadUInt32(UInt32[])",
+      "System.Array.Sort(Array, IComparer)"
+    ]
+  },
+  {
+    "Caller": "Microsoft.Cci.Pdb.PdbFile.LoadTokenToSourceInfo(BitAccess, DbiModuleInfo, IntHashTable, MsfDirectory, Dictionary\u00602, PdbReader, Dictionary\u00602, Dictionary\u00602)",
+    "Callees": [
+      "Microsoft.Cci.Pdb.BitAccess.set_Position(Int32)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadInt32(Int32\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.set_Position(Int32)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadUInt16(UInt16\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.get_Position()",
+      "Microsoft.Cci.Pdb.BitAccess.get_Position()",
+      "Microsoft.Cci.Pdb.BitAccess.set_Position(Int32)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadUInt16(UInt16\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadGuid(Guid\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadUInt32(UInt32\u0026)",
+      "System.Guid.op_Equality(Guid, Guid)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadString()",
+      "System.String.op_Equality(String, String)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadUInt32(UInt32\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadUInt32(UInt32\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadUInt32(UInt32\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadUInt32(UInt32\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadUInt32(UInt32\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadUInt32(UInt32\u0026)",
+      "System.Collections.Generic.Dictionary\u00602\u003CSystem.UInt32,Microsoft.Cci.Pdb.PdbTokenLine\u003E.TryGetValue(!0, !1\u0026)",
+      "System.Collections.Generic.Dictionary\u00602\u003CSystem.UInt32,Microsoft.Cci.Pdb.PdbTokenLine\u003E.Add(!0, !1)",
+      "Microsoft.Cci.Pdb.BitAccess.set_Position(Int32)",
+      "Microsoft.Cci.Pdb.BitAccess.set_Position(Int32)",
+      "Microsoft.Cci.Pdb.BitAccess.set_Position(Int32)",
+      "Microsoft.Cci.Pdb.BitAccess.get_Position()",
+      "Microsoft.Cci.Pdb.BitAccess.set_Position(Int32)",
+      "Microsoft.Cci.Pdb.PdbFile.ReadSourceFileInfo(BitAccess, UInt32, IntHashTable, MsfDirectory, Dictionary\u00602, PdbReader, Dictionary\u00602)",
+      "System.Collections.Generic.Dictionary\u00602\u003CSystem.UInt32,Microsoft.Cci.Pdb.PdbTokenLine\u003E.get_Values()",
+      "System.Collections.Generic.Dictionary\u00602/ValueCollection\u003CSystem.UInt32,Microsoft.Cci.Pdb.PdbTokenLine\u003E.GetEnumerator()",
+      "System.Collections.Generic.Dictionary\u00602/ValueCollection/Enumerator\u003CSystem.UInt32,Microsoft.Cci.Pdb.PdbTokenLine\u003E.get_Current()",
+      "Microsoft.Cci.Pdb.IntHashTable.get_Item(Int32)",
+      "System.Collections.Generic.Dictionary\u00602/ValueCollection/Enumerator\u003CSystem.UInt32,Microsoft.Cci.Pdb.PdbTokenLine\u003E.MoveNext()",
+      "System.IDisposable.Dispose()"
+    ]
+  },
+  {
+    "Caller": "Microsoft.Cci.Pdb.PdbFile.ReadSourceFileInfo(BitAccess, UInt32, IntHashTable, MsfDirectory, Dictionary\u00602, PdbReader, Dictionary\u00602)",
+    "Callees": [
+      "Microsoft.Cci.Pdb.BitAccess.get_Position()",
+      "Microsoft.Cci.Pdb.BitAccess.ReadInt32(Int32\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadInt32(Int32\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.get_Position()",
+      "Microsoft.Cci.Pdb.BitAccess.get_Position()",
+      "Microsoft.Cci.Pdb.BitAccess.get_Position()",
+      "Microsoft.Cci.Pdb.BitAccess.ReadUInt32(UInt32\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadUInt8(Byte\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadUInt8(Byte\u0026)",
+      "Microsoft.Cci.Pdb.IntHashTable.get_Item(Int32)",
+      "System.Collections.Generic.Dictionary\u00602\u003CSystem.String,Microsoft.Cci.Pdb.PdbSource\u003E.TryGetValue(!0, !1\u0026)",
+      "System.String.ToUpperInvariant()",
+      "System.String.Concat(String, String)",
+      "System.Collections.Generic.Dictionary\u00602\u003CSystem.String,System.Int32\u003E.TryGetValue(!0, !1\u0026)",
+      "Microsoft.Cci.Pdb.DataStream.Read(PdbReader, BitAccess)",
+      "Microsoft.Cci.Pdb.PdbFile.LoadInjectedSourceInformation(BitAccess, Guid\u0026, Guid\u0026, Guid\u0026, Guid\u0026, Byte[]\u0026)",
+      "System.Collections.Generic.Dictionary\u00602\u003CSystem.String,Microsoft.Cci.Pdb.PdbSource\u003E.Add(!0, !1)",
+      "Microsoft.Cci.Pdb.IntHashTable.Add(Int32, Object)",
+      "Microsoft.Cci.Pdb.BitAccess.get_Position()",
+      "Microsoft.Cci.Pdb.BitAccess.set_Position(Int32)",
+      "Microsoft.Cci.Pdb.BitAccess.Align(Int32)",
+      "Microsoft.Cci.Pdb.BitAccess.get_Position()",
+      "Microsoft.Cci.Pdb.BitAccess.set_Position(Int32)",
+      "Microsoft.Cci.Pdb.BitAccess.set_Position(Int32)",
+      "Microsoft.Cci.Pdb.BitAccess.get_Position()"
+    ]
+  },
+  {
+    "Caller": "Microsoft.Cci.Pdb.PdbFileHeader..ctor(Stream, BitAccess)",
+    "Callees": [
+      "System.Runtime.CompilerServices.RuntimeHelpers.InitializeArray(Array, RuntimeFieldHandle)",
+      "System.Object..ctor()",
+      "Microsoft.Cci.Pdb.BitAccess.MinCapacity(Int32)",
+      "System.IO.Stream.Seek(Int64, SeekOrigin)",
+      "Microsoft.Cci.Pdb.BitAccess.FillBuffer(Stream, Int32)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadBytes(Byte[])",
+      "Microsoft.Cci.Pdb.BitAccess.ReadInt32(Int32\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadInt32(Int32\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadInt32(Int32\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadInt32(Int32\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadInt32(Int32\u0026)",
+      "System.Linq.Enumerable.SequenceEqual(IEnumerable\u00601, IEnumerable\u00601)",
+      "System.Array.Empty()",
+      "Microsoft.Cci.Pdb.BitAccess.FillBuffer(Stream, Int32)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadInt32(Int32[])"
+    ]
+  },
+  {
+    "Caller": "Microsoft.Cci.Pdb.PdbFunction.StripNamespace(String)",
+    "Callees": [
+      "System.String.LastIndexOf(Char)",
+      "System.String.Substring(Int32)"
+    ]
+  },
+  {
+    "Caller": "Microsoft.Cci.Pdb.PdbFunction.AdjustVisualBasicScopes()",
+    "Callees": [
+      "Microsoft.Cci.Pdb.PdbFunction.AdjustVisualBasicScopes(PdbScope[])"
+    ]
+  },
+  {
+    "Caller": "Microsoft.Cci.Pdb.PdbFunction.AdjustVisualBasicScopes(PdbScope[])",
+    "Callees": [
+      "Microsoft.Cci.Pdb.PdbFunction.AdjustVisualBasicScopes(PdbScope[])"
+    ]
+  },
+  {
+    "Caller": "Microsoft.Cci.Pdb.PdbFunction.LoadManagedFunctions(BitAccess, UInt32, Boolean)",
+    "Callees": [
+      "Microsoft.Cci.Pdb.BitAccess.get_Position()",
+      "Microsoft.Cci.Pdb.BitAccess.ReadUInt16(UInt16\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.get_Position()",
+      "Microsoft.Cci.Pdb.BitAccess.get_Position()",
+      "Microsoft.Cci.Pdb.BitAccess.set_Position(Int32)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadUInt16(UInt16\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadUInt32(UInt32\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadUInt32(UInt32\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.set_Position(Int32)",
+      "Microsoft.Cci.Pdb.BitAccess.set_Position(Int32)",
+      "Microsoft.Cci.Pdb.BitAccess.set_Position(Int32)",
+      "Microsoft.Cci.Pdb.BitAccess.get_Position()",
+      "Microsoft.Cci.Pdb.BitAccess.set_Position(Int32)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadUInt16(UInt16\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.get_Position()",
+      "Microsoft.Cci.Pdb.BitAccess.get_Position()",
+      "Microsoft.Cci.Pdb.BitAccess.ReadUInt16(UInt16\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadUInt32(UInt32\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadUInt32(UInt32\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadUInt32(UInt32\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadUInt32(UInt32\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadUInt32(UInt32\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadUInt32(UInt32\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadUInt32(UInt32\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadUInt32(UInt32\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadUInt16(UInt16\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadUInt8(Byte\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadUInt16(UInt16\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadCString(String\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.SkipCString(String\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.set_Position(Int32)",
+      "Microsoft.Cci.Pdb.BitAccess.set_Position(Int32)",
+      "Microsoft.Cci.Pdb.BitAccess.get_Position()"
+    ]
+  },
+  {
+    "Caller": "Microsoft.Cci.Pdb.PdbFunction.CountScopesAndSlots(BitAccess, UInt32, Int32\u0026, Int32\u0026, Int32\u0026, Int32\u0026)",
+    "Callees": [
+      "Microsoft.Cci.Pdb.BitAccess.get_Position()",
+      "Microsoft.Cci.Pdb.BitAccess.ReadUInt16(UInt16\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.get_Position()",
+      "Microsoft.Cci.Pdb.BitAccess.get_Position()",
+      "Microsoft.Cci.Pdb.BitAccess.set_Position(Int32)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadUInt16(UInt16\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadUInt32(UInt32\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadUInt32(UInt32\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.set_Position(Int32)",
+      "Microsoft.Cci.Pdb.BitAccess.set_Position(Int32)",
+      "Microsoft.Cci.Pdb.BitAccess.set_Position(Int32)",
+      "Microsoft.Cci.Pdb.BitAccess.set_Position(Int32)",
+      "Microsoft.Cci.Pdb.BitAccess.set_Position(Int32)",
+      "Microsoft.Cci.Pdb.BitAccess.get_Position()",
+      "Microsoft.Cci.Pdb.BitAccess.set_Position(Int32)"
+    ]
+  },
+  {
+    "Caller": "Microsoft.Cci.Pdb.PdbFunction..ctor()",
+    "Callees": [
+      "System.Object..ctor()"
+    ]
+  },
+  {
+    "Caller": "Microsoft.Cci.Pdb.PdbFunction..ctor(ManProcSym, BitAccess)",
+    "Callees": [
+      "System.Object..ctor()",
+      "Microsoft.Cci.Pdb.PdbFunction.CountScopesAndSlots(BitAccess, UInt32, Int32\u0026, Int32\u0026, Int32\u0026, Int32\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadUInt16(UInt16\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.get_Position()",
+      "Microsoft.Cci.Pdb.BitAccess.get_Position()",
+      "Microsoft.Cci.Pdb.BitAccess.set_Position(Int32)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadUInt16(UInt16\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadGuid(Guid\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadUInt32(UInt32\u0026)",
+      "System.Guid.op_Equality(Guid, Guid)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadString()",
+      "System.String.op_Equality(String, String)",
+      "Microsoft.Cci.Pdb.PdbFunction.ReadMD2CustomMetadata(BitAccess)",
+      "System.String.op_Equality(String, String)",
+      "Microsoft.Cci.Pdb.BitAccess.set_Position(Int32)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadUInt32(UInt32\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadUInt32(UInt32\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadUInt32(UInt32\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadUInt32(UInt32\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadUInt16(UInt16\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.SkipCString(String\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.set_Position(Int32)",
+      "Microsoft.Cci.Pdb.BitAccess.set_Position(Int32)",
+      "Microsoft.Cci.Pdb.BitAccess.set_Position(Int32)",
+      "Microsoft.Cci.Pdb.BitAccess.set_Position(Int32)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadCString(String\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.set_Position(Int32)",
+      "Microsoft.Cci.Pdb.BitAccess.set_Position(Int32)",
+      "Microsoft.Cci.Pdb.BitAccess.set_Position(Int32)",
+      "Microsoft.Cci.Pdb.BitAccess.get_Position()",
+      "Microsoft.Cci.Pdb.BitAccess.get_Position()",
+      "System.Array.Empty()",
+      "Microsoft.Cci.Pdb.BitAccess.ReadUInt16(UInt16\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadUInt16(UInt16\u0026)",
+      "System.Array.Empty()"
+    ]
+  },
+  {
+    "Caller": "Microsoft.Cci.Pdb.PdbFunction.ReadMD2CustomMetadata(BitAccess)",
+    "Callees": [
+      "Microsoft.Cci.Pdb.BitAccess.ReadUInt8(Byte\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadUInt8(Byte\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.Align(Int32)",
+      "Microsoft.Cci.Pdb.PdbFunction.ReadCustomMetadata(BitAccess)"
+    ]
+  },
+  {
+    "Caller": "Microsoft.Cci.Pdb.PdbFunction.ReadCustomMetadata(BitAccess)",
+    "Callees": [
+      "Microsoft.Cci.Pdb.BitAccess.get_Position()",
+      "Microsoft.Cci.Pdb.BitAccess.ReadUInt8(Byte\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadUInt8(Byte\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.get_Position()",
+      "Microsoft.Cci.Pdb.BitAccess.set_Position(Int32)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadUInt32(UInt32\u0026)",
+      "Microsoft.Cci.Pdb.PdbFunction.ReadUsingInfo(BitAccess)",
+      "Microsoft.Cci.Pdb.PdbFunction.ReadForwardInfo(BitAccess)",
+      "Microsoft.Cci.Pdb.PdbFunction.ReadIteratorLocals(BitAccess)",
+      "Microsoft.Cci.Pdb.PdbFunction.ReadForwardIterator(BitAccess)",
+      "Microsoft.Cci.Pdb.BitAccess.set_Position(Int32)"
+    ]
+  },
+  {
+    "Caller": "Microsoft.Cci.Pdb.PdbFunction.ReadForwardIterator(BitAccess)",
+    "Callees": [
+      "Microsoft.Cci.Pdb.BitAccess.ReadString()"
+    ]
+  },
+  {
+    "Caller": "Microsoft.Cci.Pdb.PdbFunction.ReadIteratorLocals(BitAccess)",
+    "Callees": [
+      "Microsoft.Cci.Pdb.BitAccess.ReadUInt32(UInt32\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadUInt32(UInt32\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadUInt32(UInt32\u0026)",
+      "System.Collections.Generic.List\u00601\u003CMicrosoft.Cci.Pdb.ILocalScope\u003E.Add(!0)"
+    ]
+  },
+  {
+    "Caller": "Microsoft.Cci.Pdb.PdbFunction.ReadForwardInfo(BitAccess)",
+    "Callees": [
+      "Microsoft.Cci.Pdb.BitAccess.ReadUInt32(UInt32\u0026)"
+    ]
+  },
+  {
+    "Caller": "Microsoft.Cci.Pdb.PdbFunction.ReadUsingInfo(BitAccess)",
+    "Callees": [
+      "Microsoft.Cci.Pdb.BitAccess.ReadUInt16(UInt16\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadUInt16(UInt16\u0026)"
+    ]
+  },
+  {
+    "Caller": "Microsoft.Cci.Pdb.PdbFunction/PdbFunctionsByAddress..ctor()",
+    "Callees": [
+      "System.Object..ctor()"
+    ]
+  },
+  {
+    "Caller": "Microsoft.Cci.Pdb.PdbFunction/PdbFunctionsByAddressAndToken..ctor()",
+    "Callees": [
+      "System.Object..ctor()"
+    ]
+  },
+  {
+    "Caller": "Microsoft.Cci.Pdb.PdbSynchronizationInformation..ctor(BitAccess)",
+    "Callees": [
+      "System.Object..ctor()",
+      "Microsoft.Cci.Pdb.BitAccess.ReadUInt32(UInt32\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadUInt32(UInt32\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadUInt32(UInt32\u0026)"
+    ]
+  },
+  {
+    "Caller": "Microsoft.Cci.Pdb.PdbSynchronizationPoint..ctor(BitAccess)",
+    "Callees": [
+      "System.Object..ctor()",
+      "Microsoft.Cci.Pdb.BitAccess.ReadUInt32(UInt32\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadUInt32(UInt32\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadUInt32(UInt32\u0026)"
+    ]
+  },
+  {
+    "Caller": "Microsoft.Cci.Pdb.PdbInfo..ctor()",
+    "Callees": [
+      "System.Object..ctor()"
+    ]
+  },
+  {
+    "Caller": "Microsoft.Cci.Pdb.PdbLines..ctor(PdbSource, UInt32)",
+    "Callees": [
+      "System.Object..ctor()"
+    ]
+  },
+  {
+    "Caller": "Microsoft.Cci.Pdb.PdbReader..ctor(Stream, Int32)",
+    "Callees": [
+      "System.Object..ctor()"
+    ]
+  },
+  {
+    "Caller": "Microsoft.Cci.Pdb.PdbReader.Seek(Int32, Int32)",
+    "Callees": [
+      "System.IO.Stream.Seek(Int64, SeekOrigin)"
+    ]
+  },
+  {
+    "Caller": "Microsoft.Cci.Pdb.PdbReader.Read(Byte[], Int32, Int32)",
+    "Callees": [
+      "System.IO.Stream.Read(Byte[], Int32, Int32)"
+    ]
+  },
+  {
+    "Caller": "Microsoft.Cci.Pdb.PdbScope..ctor(UInt32, UInt32, UInt32, PdbSlot[], PdbConstant[], String[])",
+    "Callees": [
+      "System.Object..ctor()"
+    ]
+  },
+  {
+    "Caller": "Microsoft.Cci.Pdb.PdbScope..ctor(UInt32, UInt32, PdbSlot[], PdbConstant[], String[])",
+    "Callees": [
+      "Microsoft.Cci.Pdb.PdbScope..ctor(UInt32, UInt32, UInt32, PdbSlot[], PdbConstant[], String[])"
+    ]
+  },
+  {
+    "Caller": "Microsoft.Cci.Pdb.PdbScope..ctor(UInt32, BlockSym32, BitAccess, UInt32\u0026)",
+    "Callees": [
+      "System.Object..ctor()",
+      "Microsoft.Cci.Pdb.PdbFunction.CountScopesAndSlots(BitAccess, UInt32, Int32\u0026, Int32\u0026, Int32\u0026, Int32\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadUInt16(UInt16\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.get_Position()",
+      "Microsoft.Cci.Pdb.BitAccess.get_Position()",
+      "Microsoft.Cci.Pdb.BitAccess.set_Position(Int32)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadUInt16(UInt16\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadUInt32(UInt32\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadUInt32(UInt32\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadUInt32(UInt32\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadUInt32(UInt32\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadUInt16(UInt16\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.SkipCString(String\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.set_Position(Int32)",
+      "Microsoft.Cci.Pdb.BitAccess.set_Position(Int32)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadCString(String\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.set_Position(Int32)",
+      "Microsoft.Cci.Pdb.BitAccess.set_Position(Int32)",
+      "Microsoft.Cci.Pdb.BitAccess.set_Position(Int32)",
+      "Microsoft.Cci.Pdb.BitAccess.set_Position(Int32)",
+      "Microsoft.Cci.Pdb.BitAccess.get_Position()",
+      "Microsoft.Cci.Pdb.BitAccess.get_Position()",
+      "Microsoft.Cci.Pdb.BitAccess.ReadUInt16(UInt16\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadUInt16(UInt16\u0026)"
+    ]
+  },
+  {
+    "Caller": "Microsoft.Cci.Pdb.PdbSlot..ctor(UInt32, UInt32, String, UInt16)",
+    "Callees": [
+      "System.Object..ctor()"
+    ]
+  },
+  {
+    "Caller": "Microsoft.Cci.Pdb.PdbSlot..ctor(BitAccess)",
+    "Callees": [
+      "System.Object..ctor()",
+      "Microsoft.Cci.Pdb.BitAccess.ReadUInt32(UInt32\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadUInt32(UInt32\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadUInt32(UInt32\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadUInt16(UInt16\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadUInt16(UInt16\u0026)",
+      "Microsoft.Cci.Pdb.BitAccess.ReadCString(String\u0026)"
+    ]
+  },
+  {
+    "Caller": "Microsoft.Cci.Pdb.PdbSource..ctor(String, Guid, Guid, Guid, Guid, Byte[])",
+    "Callees": [
+      "System.Object..ctor()"
+    ]
+  },
+  {
+    "Caller": "Microsoft.Cci.Pdb.PdbTokenLine..ctor(UInt32, UInt32, UInt32, UInt32, UInt32, UInt32)",
+    "Callees": [
+      "System.Object..ctor()"
+    ]
+  },
+  {
+    "Caller": "Microsoft.Cci.Pdb.PdbIteratorScope..ctor(UInt32, UInt32)",
+    "Callees": [
+      "System.Object..ctor()"
+    ]
+  }
+]

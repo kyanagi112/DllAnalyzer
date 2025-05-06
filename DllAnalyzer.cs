@@ -35,7 +35,8 @@ class DllAnalyzer
         var assembly = AssemblyDefinition.ReadAssembly(dllPath);
         // メソッド呼び出し情報を格納するリスト
         // MethodCallInfo クラスのインスタンスを格納するリスト  
-        var methodCalls = new List<MethodCallInfo>();
+        var method_calls
+ = new List<MethodCallInfo>();
 
         // 各モジュールをループして、型を取得する
         foreach (var module in assembly.Modules)
@@ -44,17 +45,20 @@ class DllAnalyzer
             foreach (var type in module.Types)
             {
                 // ProcessType メソッドを呼び出して、型内のメソッド呼び出しを解析する
-                ProcessType(type, methodCalls);
+                ProcessType(type, method_calls
+);
             }
         }  
-        string jsonOutput = JsonSerializer.Serialize(methodCalls, new JsonSerializerOptions { WriteIndented = true });
+        string jsonOutput = JsonSerializer.Serialize(method_calls
+, new JsonSerializerOptions { WriteIndented = true });
         File.WriteAllText("method_calls.json", jsonOutput);
 
         Console.WriteLine("解析完了！JSON 出力: method_calls.json");
     }
 
     // 型内のメソッド呼び出しを解析するメソッド
-    static void ProcessType(TypeDefinition type, List<MethodCallInfo> methodCalls)
+    static void ProcessType(TypeDefinition type, List<MethodCallInfo> method_calls
+)
     {
         // 型が抽象クラスまたはインターフェースの場合はスキップ
         foreach (var method in type.Methods)
@@ -92,13 +96,15 @@ class DllAnalyzer
             // 呼び出し先メソッドが存在する場合、メソッド呼び出し情報をリストに追加する
             if (info.Callees.Count > 0)
             {   
-                methodCalls.Add(info);
+                method_calls
+.Add(info);
             }
         }
         // ネストされた型にも対応
         foreach (var nested in type.NestedTypes)
         {
-            ProcessType(nested, methodCalls);
+            ProcessType(nested, method_calls
+);
         }
     }
 }

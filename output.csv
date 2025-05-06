@@ -1,0 +1,8 @@
+﻿caller,callees,level,path
+DllAnalyzer.Main(String[]),"DllAnalyzer.ProcessType(TypeDefinition, List`1)",1,"DllAnalyzer.Main(String[])→DllAnalyzer.ProcessType(TypeDefinition, List`1)"
+"DllAnalyzer.ProcessType(TypeDefinition, List`1)",MethodCallInfo.set_Caller(String),1,"DllAnalyzer.ProcessType(TypeDefinition, List`1)→MethodCallInfo.set_Caller(String)"
+"DllAnalyzer.ProcessType(TypeDefinition, List`1)",MethodCallInfo.get_Callees(),1,"DllAnalyzer.ProcessType(TypeDefinition, List`1)→MethodCallInfo.get_Callees()"
+"DllAnalyzer.ProcessType(TypeDefinition, List`1)",MethodCallInfo.get_Callees(),1,"DllAnalyzer.ProcessType(TypeDefinition, List`1)→MethodCallInfo.get_Callees()"
+DllAnalyzer.Main(String[]),MethodCallInfo.get_Callees(),2,"DllAnalyzer.Main(String[])→DllAnalyzer.ProcessType(TypeDefinition, List`1)→MethodCallInfo.get_Callees()"
+DllAnalyzer.Main(String[]),MethodCallInfo.get_Callees(),2,"DllAnalyzer.Main(String[])→DllAnalyzer.ProcessType(TypeDefinition, List`1)→MethodCallInfo.get_Callees()"
+DllAnalyzer.Main(String[]),MethodCallInfo.set_Caller(String),2,"DllAnalyzer.Main(String[])→DllAnalyzer.ProcessType(TypeDefinition, List`1)→MethodCallInfo.set_Caller(String)"
